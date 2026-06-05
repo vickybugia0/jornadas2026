@@ -1,0 +1,32 @@
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Buscar Plato</title>
+<style>
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#ff9a9e,#fad0c4);display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.container{background:#fff;padding:30px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.2);width:380px;text-align:center}
+input[list],input[type="submit"]{width:90%;padding:10px;margin:15px 0;border:1px solid #ccc;border-radius:8px;font-size:14px}
+input[type="submit"]{background:#4CAF50;color:#fff;border:none;cursor:pointer;font-weight:bold;transition:.3s}
+input[type="submit"]:hover{background:#388E3C}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Buscar Plato</h2>
+    <form action="modificar_menu.php" method="GET">
+        <input list="menus" name="id" placeholder="Escriba el nombre del plato" required>
+        <datalist id="menus">
+            <?php while($fila = $resultado->fetch_assoc()): ?>
+                <option value="<?php echo $fila['id']; ?>">
+                    <?php echo $fila['nombre_plato'] . " (" . $fila['tipo'] . ") - " . $fila['calorias'] . " cal"; ?>
+                </option>
+            <?php endwhile; ?>
+        </datalist>
+        <input type="submit" value="Modificar">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Modificar usuario</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="navbar">Modificar usuario</div>
+
+<div class="container">
+
+<div class="card">
+    <h2>Buscar usuario</h2>
+
+    <input type="text" id="buscarUser" placeholder="Usuario">
+    <input type="password" id="buscarPass" placeholder="Contraseña">
+
+    <button onclick="buscarUsuario()">Buscar</button>
+</div>
+
+<div class="card" id="edicion" style="display:none;">
+    <h2>Editar usuario</h2>
+
+    <input type="text" id="nuevoNombre">
+    
+    <select id="nuevoCargo">
+        <option>Directivo</option>
+        <option>Administrativo</option>
+        <option>Docente</option>
+        <option>No docente</option>
+        <option>Alumno</option>
+    </select>
+
+    <button onclick="guardarCambios()">Guardar cambios</button>
+</div>
+
+<a href="usuarios.html" class="volver">⬅ Volver</a>
+
+</div>
+
+<script>
+let indiceUsuario = -1;
+
+function buscarUsuario() {
+    let user = document.getElementById("buscarUser").value;
+    let pass = document.getElementById("buscarPass").value;
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    indiceUsuario = usuarios.findIndex(
+        u => u.usuario === user && u.pass === pass
+    );
+
+    if (indiceUsuario === -1) {
+        alert("Datos incorrectos");
+        return;
+    }
+
+    document.getElementById("edicion").style.display = "block";
+
+    document.getElementById("nuevoNombre").value = usuarios[indiceUsuario].nombre;
+    document.getElementById("nuevoCargo").value = usuarios[indiceUsuario].cargo;
+}
+
+function guardarCambios() {
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    usuarios[indiceUsuario].nombre = document.getElementById("nuevoNombre").value;
+    usuarios[indiceUsuario].cargo = document.getElementById("nuevoCargo").value;
+
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+    alert("Usuario modificado ✔");
+}
+</script>
+
+</body>
+</html>

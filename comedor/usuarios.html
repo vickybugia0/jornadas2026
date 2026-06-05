@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Usuarios</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🌿 App</h2>
+    <a href="menu.html">🏠 Inicio</a>
+    <a href="usuarios.html">👤 Usuarios</a>
+    <a href="#" onclick="logout()">🚪 Salir</a>
+</div>
+
+<div class="main">
+
+<div id="usuarioLogueado"></div>
+
+<div class="navbar">Usuarios</div>
+
+<div class="container">
+
+<div class="card">
+    <a href="alta.html"><button>Crear usuario</button></a>
+    <a href="modificar.html"><button>Modificar usuario</button></a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+let usuario = localStorage.getItem("usuarioActivo");
+
+if (!usuario) window.location.href = "index.html";
+
+document.getElementById("usuarioLogueado").textContent =
+    "Usuario: " + usuario;
+
+function logout() {
+    localStorage.removeItem("usuarioActivo");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

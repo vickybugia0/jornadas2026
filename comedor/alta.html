@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Alta usuario</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="navbar">Nuevo usuario</div>
+
+<div class="container">
+
+<div class="card">
+    <h2>Crear usuario</h2>
+
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="text" id="nombre" placeholder="Nombre completo">
+
+    <select id="cargo">
+        <option value="">Seleccionar cargo</option>
+        <option>Directivo</option>
+        <option>Administrativo</option>
+        <option>Docente</option>
+        <option>No docente</option>
+        <option>Alumno</option>
+    </select>
+
+    <input type="password" id="pass" placeholder="Contraseña">
+
+    <button onclick="guardarUsuario()">Guardar</button>
+
+    <p id="mensaje" style="color:green;"></p>
+</div>
+
+<a href="usuarios.html" class="volver">⬅ Volver</a>
+
+</div>
+
+<script>
+function guardarUsuario() {
+    let usuario = document.getElementById("usuario").value.trim();
+    let nombre = document.getElementById("nombre").value.trim();
+    let cargo = document.getElementById("cargo").value;
+    let pass = document.getElementById("pass").value;
+
+    if (!usuario || !nombre || !cargo || !pass) {
+        alert("Completá todos los campos");
+        return;
+    }
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    let existe = usuarios.some(u => u.usuario === usuario);
+
+    if (existe) {
+        alert("Ese usuario ya existe");
+        return;
+    }
+
+    usuarios.push({ usuario, nombre, cargo, pass });
+
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+    document.getElementById("mensaje").textContent =
+        "Usuario guardado ✔";
+
+    document.getElementById("usuario").value = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("cargo").value = "";
+    document.getElementById("pass").value = "";
+}
+</script>
+<script>
+window.onload = function() {
+    mostrarUsuarioActivo();
+};
+
+function mostrarUsuarioActivo() {
+    let usuarioActivo = localStorage.getItem("usuarioActivo");
+    let elemento = document.getElementById("usuarioActivo");
+    if (usuarioActivo && elemento) {
+        elemento.textContent = "Usuario: " + usuarioActivo;
+    } else if (elemento) {
+        elemento.textContent = "";
+    }
+}
+</script>
+
+</body>
+</html>

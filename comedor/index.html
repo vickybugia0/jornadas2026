@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+    <h2>🔐 Login</h2>
+
+    <input type="text" id="loginUser" placeholder="Usuario">
+    <input type="password" id="loginPass" placeholder="Contraseña">
+
+    <button onclick="login()">Entrar</button>
+
+    <p id="error" style="color:red;"></p>
+</div>
+
+</div>
+
+<script>
+// crear admin si no existe
+let usuarios = JSON.parse(localStorage.getItem("usuarios"));
+
+if (!usuarios || usuarios.length === 0) {
+    let usuarioDefault = [
+        { usuario: "admin", nombre: "Administrador", cargo: "Directivo", pass: "1234" }
+    ];
+    localStorage.setItem("usuarios", JSON.stringify(usuarioDefault));
+}
+
+function login() {
+    let user = document.getElementById("loginUser").value;
+    let pass = document.getElementById("loginPass").value;
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+    let usuario = usuarios.find(u => u.usuario === user && u.pass === pass);
+
+    if (usuario) {
+        localStorage.setItem("usuarioActivo", usuario.usuario);
+        window.location.href = "menu.html";
+    } else {
+        document.getElementById("error").textContent =
+            "Usuario o contraseña incorrectos";
+    }
+}
+</script>
+
+</body>
+</html>

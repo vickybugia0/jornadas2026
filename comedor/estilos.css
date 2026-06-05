@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #e8e3d9;
+    color: #2f3e34;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #2d4a3e;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #f1f0ea;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sidebar a {
+    display: block;
+    color: #e8e3d9;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #3a5a40;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.navbar {
+    background: #344e41;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.card {
+    background: #f4f1ea;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3a5a40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #2d4a3e;
+}
+
+.volver {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}

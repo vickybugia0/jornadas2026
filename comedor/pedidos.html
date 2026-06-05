@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pedidos</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    Pedidos
+    <span id="usuarioActivo" style="margin-left:20px; font-size:0.9em; color:#fff;"></span>
+</div>
+
+<div class="container">
+
+<div class="card">
+    <h2>Realizar pedido</h2>
+
+    <form action="confirmacion.html">
+
+        <input type="text" placeholder="Nombre y apellido" required>
+
+        <select required>
+            <option value="">Seleccionar cargo</option>
+            <option>Directivo</option>
+            <option>Administrativo</option>
+            <option>Docente</option>
+            <option>No docente</option>
+            <option>Alumno</option>
+        </select>
+
+        <input type="date" required>
+
+        <select id="menuSelect" required>
+            <option value="">Seleccionar menú</option>
+            <option>Menú regular</option>
+            <option>Menú opcional</option>
+            <option>Celíacos</option>
+            <option>Diabético</option>
+            <option>Vegano</option>
+            <option>Vegetariano</option>
+            <option>Sin lactosa</option>
+            <option>Dieta</option>
+        </select>
+
+        <p id="menuElegido" style="color: green;"></p>
+
+        <button type="submit">Confirmar pedido</button>
+
+    </form>
+</div>
+
+<a href="menu.html" class="volver">⬅ Volver</a>
+
+</div>
+
+<script>
+window.onload = function() {
+    mostrarUsuarioActivo();
+
+    let menu = localStorage.getItem("menuSeleccionado");
+
+    if (menu) {
+        document.getElementById("menuElegido").textContent =
+            "Menú seleccionado: " + menu;
+
+        let select = document.getElementById("menuSelect");
+
+        for (let i = 0; i < select.options.length; i++) {
+            if (select.options[i].text === menu) {
+                select.selectedIndex = i;
+            }
+        }
+    }
+};
+
+function mostrarUsuarioActivo() {
+    let usuarioActivo = localStorage.getItem("usuarioActivo");
+    let elemento = document.getElementById("usuarioActivo");
+    if (usuarioActivo && elemento) {
+        elemento.textContent = "Usuario: " + usuarioActivo;
+    } else if (elemento) {
+        elemento.textContent = "";
+    }
+}
+</script>
+
+</body>
+</html>

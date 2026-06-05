@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Listados</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="navbar">Listados</div>
+
+<div class="container">
+
+<div class="card">
+    <h2>Usuarios</h2>
+
+    <ul>
+        <li>Juan - Docente</li>
+        <li>María - Alumna</li>
+        <li>Carlos - Administrativo</li>
+    </ul>
+</div>
+
+<a href="usuarios.html" class="volver">⬅ Volver</a>
+
+</div>
+<script>
+window.onload = function() {
+    mostrarUsuarioActivo();
+};
+
+function mostrarUsuarioActivo() {
+    let usuarioActivo = localStorage.getItem("usuarioActivo");
+    let elemento = document.getElementById("usuarioActivo");
+    if (usuarioActivo && elemento) {
+        elemento.textContent = "Usuario: " + usuarioActivo;
+    } else if (elemento) {
+        elemento.textContent = "";
+    }
+}
+</script>
+
+</body>
+</html>
