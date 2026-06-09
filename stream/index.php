@@ -4,7 +4,7 @@
 <html lang="es">
 
 <head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -170,30 +170,20 @@
     <div class="jornadas-grid">
 
         <div class="jornada-card">
-            <h3>Programación</h3>
+            <h3>Naturaleza</h3>
         </div>
 
         <div class="jornada-card">
-            <h3>Robótica</h3>
+            <h3>Tecnología</h3>
         </div>
 
         <div class="jornada-card">
-            <h3>Matemática</h3>
+            <h3>Consumo</h3>
         </div>
 
-        <div class="jornada-card">
-            <h3>Ciencias Naturales</h3>
+        <div class="jornada-card.2">
+            <h3>Sociedad</h3>
         </div>
-
-        <div class="jornada-card">
-            <h3>Diseño</h3>
-        </div>
-
-        <div class="jornada-card">
-            <h3>Comunicación</h3>
-        </div>
-
-    </div>
 
 </section>
 
@@ -269,26 +259,26 @@
 <section id="contacto" class="contact">
 
     <h2>Contacto</h2>
-
-    <div class="contact-grid">
-
-        <div class="contact-card">
-            <h3>Instagram</h3>
-            <p>@institutoisaacnewton</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>YouTube</h3>
-            <p>Canal Oficial</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>Email</h3>
-            <p>info@isaacnewton.edu.ar</p>
-        </div>
-
     </div>
+<ul class="social-media-buttons">
 
+    <li>
+        <a href="https://www.instagram.com/newtonweb.info" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.facebook.com/institutoisaacnewtoncba/?locale=es_LA" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </li>
+    <li>
+    <a href="https://wa.me/5493513722778" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</li>
+</ul>
 </section>
 
 <!-- FOOTER -->

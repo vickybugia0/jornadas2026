@@ -7,19 +7,18 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js"></script>
 <body>
 
 <header>
 
     <div class="logo-container">
-
         <img src="img/logo2.png">
 
         <div>
             <h1>Instituto Tecnológico</h1>
             <p>Isaac Newton</p>
         </div>
-
     </div>
 
     <nav>
@@ -38,7 +37,7 @@
 
     <div>
 
-        <span>Curso</span>
+        <span>Jornadas Interactivas 2026</span>
 
         <h2>6° Año</h2>
 
@@ -54,6 +53,53 @@
 
 </section>
 
+<!-- INFORMACIÓN RÁPIDA -->
+
+<section class="info-cards">
+
+    <div class="info-card">
+        <h3>Proyecto Principal</h3>
+        <p>Generador Eólico Inteligente</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Participantes</h3>
+        <p>35 estudiantes</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Categoría</h3>
+        <p>Tecnología y Ciencias</p>
+    </div>
+
+</section>
+
+<!-- PROYECTO DESTACADO -->
+
+<section class="featured-project">
+
+    <div class="project-image">
+        <img src="img/proyecto.jpg">
+    </div>
+
+    <div class="project-content">
+
+        <span>PROYECTO DESTACADO</span>
+
+        <h2>Generador Eólico Inteligente</h2>
+
+        <p>
+            Proyecto interdisciplinario presentado durante las
+            Jornadas Interactivas que combina tecnología,
+            energías renovables y comunicación audiovisual.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- STREAM -->
+
 <section class="course-section">
 
     <h2>Stream del Curso</h2>
@@ -64,31 +110,50 @@
         src="https://www.youtube.com/embed/jfKfPfyJRdk"
         allowfullscreen>
         </iframe>
+
     </div>
+
+</section>
+
+<!-- ESTADÍSTICAS -->
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h3>8</h3>
+        <p>Proyectos</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>35</h3>
+        <p>Estudiantes</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>6</h3>
+        <p>Áreas Integradas</p>
+    </div>
+
+
 </section>
 
 <section class="course-section">
 
-    <h2>Materias</h2>
+    <h2>Proyectos</h2>
 
     <div class="accordion">
 
-        <button class="accordion-btn">Matemática</button>
+        <button class="accordion-btn">The smart house of the future</button>
         <div class="accordion-content">
             <p>Participación en proyectos de cálculo, estadística y análisis de datos.</p>
         </div>
 
-        <button class="accordion-btn">Lengua</button>
+        <button class="accordion-btn">INTECH:Ciudadanía entre algoritmos, ecosistemas y consumos</button>
         <div class="accordion-content">
             <p>Producción de textos, guiones y presentaciones institucionales.</p>
         </div>
 
-        <button class="accordion-btn">Inglés</button>
-        <div class="accordion-content">
-            <p>Desarrollo de contenidos y vocabulario aplicado a tecnología.</p>
-        </div>
-
-        <button class="accordion-btn">Ciencias Naturales</button>
+        <button class="accordion-btn">Córdoba en transformación:¿Qué historia queremos contar?</button>
         <div class="accordion-content">
             <p>Investigaciones y proyectos para Jornadas Interactivas.</p>
         </div>
@@ -96,6 +161,41 @@
     </div>
 
 </section>
+
+<!-- CRONOGRAMA -->
+
+<section class="timeline">
+
+    <h2>Cronograma de Presentaciones</h2>
+
+    <div class="timeline-item">
+        <span>09:00</span>
+        <p>Apertura de la exposición</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>10:00</span>
+        <p>Presentación de proyectos</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>12:00</span>
+        <p>Entrevistas y transmisiones</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>14:00</span>
+        <p>Demostraciones tecnológicas</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>16:00</span>
+        <p>Cierre de actividades</p>
+    </div>
+
+</section>
+
+<!-- GALERÍA -->
 
 <section class="course-section">
 
@@ -114,11 +214,17 @@
 
 <footer>
 
-    <h3>Instituto Tecnológico Isaac Newton</h3>
-    <p>Sapientia pro vitam</p>
+    <h3>6° Año · Jornadas Interactivas 2026</h3>
+
+    <p>
+        Tecnología · Innovación · Creatividad
+    </p>
+
+    <p>
+        Instituto Tecnológico Isaac Newton
+    </p>
 
 </footer>
-
 <script>
 
 document.querySelectorAll(".accordion-btn").forEach(btn => {
@@ -144,5 +250,6 @@ document.querySelectorAll(".accordion-btn").forEach(btn => {
 
 </script>
 
+</body>
 </body>
 </html>

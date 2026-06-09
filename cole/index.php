@@ -275,13 +275,6 @@
             <img src="img/facebook.png" alt="Facebook">
         </a>
     </li>
-
-    <li>
-        <a href="#" title="LinkedIn">
-            <img src="img/linkedin.png" alt="LinkedIn">
-        </a>
-    </li>
-
 </ul>
 
         </div>

@@ -7,19 +7,18 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js"></script>
 <body>
 
 <header>
 
     <div class="logo-container">
-
         <img src="img/logo2.png">
 
         <div>
             <h1>Instituto Tecnológico</h1>
             <p>Isaac Newton</p>
         </div>
-
     </div>
 
     <nav>
@@ -38,7 +37,7 @@
 
     <div>
 
-        <span>Curso</span>
+        <span>Jornadas Interactivas 2026</span>
 
         <h2>1° Año</h2>
 
@@ -54,6 +53,53 @@
 
 </section>
 
+<!-- INFORMACIÓN RÁPIDA -->
+
+<section class="info-cards">
+
+    <div class="info-card">
+        <h3>Proyecto Principal</h3>
+        <p>Generador Eólico Inteligente</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Participantes</h3>
+        <p>35 estudiantes</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Categoría</h3>
+        <p>Tecnología y Ciencias</p>
+    </div>
+
+</section>
+
+<!-- PROYECTO DESTACADO -->
+
+<section class="featured-project">
+
+    <div class="project-image">
+        <img src="img/proyecto.jpg">
+    </div>
+
+    <div class="project-content">
+
+        <span>PROYECTO DESTACADO</span>
+
+        <h2>Generador Eólico Inteligente</h2>
+
+        <p>
+            Proyecto interdisciplinario presentado durante las
+            Jornadas Interactivas que combina tecnología,
+            energías renovables y comunicación audiovisual.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- STREAM -->
+
 <section class="course-section">
 
     <h2>Stream del Curso</h2>
@@ -64,38 +110,116 @@
         src="https://www.youtube.com/embed/jfKfPfyJRdk"
         allowfullscreen>
         </iframe>
+
     </div>
+
+</section>
+
+<!-- ESTADÍSTICAS -->
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h3>3</h3>
+        <p>Proyectos</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>28</h3>
+        <p>Estudiantes</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>9</h3>
+        <p>Áreas Integradas</p>
+    </div>
+
 </section>
 
 <section class="course-section">
 
-    <h2>Materias</h2>
+    <h2>Proyectos</h2>
 
     <div class="accordion">
 
-        <button class="accordion-btn">Matemática</button>
+        <button class="accordion-btn">The smart house of the future</button>
         <div class="accordion-content">
-            <p>Participación en proyectos de cálculo, estadística y análisis de datos.</p>
+            <p>¿En qué consiste? Es un video corto donde 6 grupos de estudiantes hacen un recorrido guiado en vivo por una maqueta o presentación de una casa inteligente. El objetivo es mostrar cómo la tecnología ayuda en las tareas del hogar, mejora el cuidado del ambiente y fomenta el consumo responsable.
+        <ul>
+            <li>Materias integradas:</li>
+            <li>Física: Los alumnos usarán simuladores digitales para entender cómo se conserva y se transforma la energía en la vida real, y cómo se "desperdicia" (degradación energética) en un hogar común. Luego, compararán sus resultados en clase.</li>
+           
+
+            <li>Matemática: Usarán cálculos de proporcionalidad para medir el ahorro energético de tecnologías como luces LED, paneles solares y electrodomésticos eficientes.</li>
+           
+
+            <li>Reflexión: Opiniones críticas sobre el impacto de la tecnología en la sociedad actual.</li> 
+        </ul>
+        </p>
         </div>
 
-        <button class="accordion-btn">Lengua</button>
+        <button class="accordion-btn">INTECH:Ciudadanía entre algoritmos, ecosistemas y consumos</button>
         <div class="accordion-content">
-            <p>Producción de textos, guiones y presentaciones institucionales.</p>
+            <p>Propósito: Estudiantes de años superiores se integran con 1.er año mediante proyectos prácticos inspirados en las películas Wall-E y El Lorax, enfocados en la sustentabilidad, la tecnología y la acción escolar.
+<ul>
+
+
+Estructura de Equipos y Entregables
+WALL-E Team: Infografía digital proyectada y demostración interactiva sobre la huella digital.
+
+<li>Lorax Team: Video documental o podcast escolar basado en el diagnóstico ambiental del ITIN.</li>
+
+<li>Equipo Filósofo-s: Manifiesto filosófico digital y coordinación de un conversatorio reflexivo.</li>
+
+<li>Equipo Futuro Verde: Plan de Acción Escolar con propuestas sustentables y un mural digital colaborativo.</li>
+
+<li>Taller Práctico Co-gestionado:</li>
+
+<li>Actividad: Construcción de mini-robots junto a los alumnos de 1.er año.</li>
+
+<li>Materiales (Reciclaje tecnológico): Memorias USB en desuso y motores de ventiladores de escritorio.</li>
+</ul></p>
         </div>
 
-        <button class="accordion-btn">Inglés</button>
+        <button class="accordion-btn">Córdoba en transformación:¿Qué historia queremos contar?</button>
         <div class="accordion-content">
-            <p>Desarrollo de contenidos y vocabulario aplicado a tecnología.</p>
-        </div>
+            <p>El proyecto inicia en el espacio de Lengua con la lectura y análisis crítico del texto “Y si no fuera un cuento”. Esta narrativa sirve como puente transdisciplinar para conectar con los contenidos de Geografía.
 
-        <button class="accordion-btn">Ciencias Naturales</button>
-        <div class="accordion-content">
-            <p>Investigaciones y proyectos para Jornadas Interactivas.</p>
+<li>Núcleos de Aprendizaje:</li>
+<li>Comprensión Lectora y Análisis Crítico (Lengua): Trabajo sobre el texto literario para identificar problemáticas socioambientales, visiones de mundo y el rol de las acciones humanas en el relato.</li>
+
+<li>El Espacio Geográfico como Construcción Social (Geografía): Análisis de cómo las sociedades se apropian de la naturaleza, la explotan y la transforman a lo largo del tiempo.
+Se conceptualiza el espacio no como algo estático, sino como el resultado de esa constante interacción entre la sociedad y su entorno natural a través de la tecnología y el trabajo.</li>
+</ul></p>
         </div>
 
     </div>
 
 </section>
+
+<!-- CRONOGRAMA -->
+
+<section class="timeline">
+
+    <h2>Cronograma de Presentaciones</h2>
+
+    <div class="timeline-item">
+        <span>Martes</span>
+        <p>1er año y 2do año</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>Miércoles</span>
+        <p>3er año y 4to año</p>
+    </div>
+
+    <div class="timeline-item">
+        <span>Jueves</span>
+        <p>5to año y 6to año</p>
+    </div>
+</section>
+
+<!-- GALERÍA -->
 
 <section class="course-section">
 
@@ -114,11 +238,17 @@
 
 <footer>
 
-    <h3>Instituto Tecnológico Isaac Newton</h3>
-    <p>Sapientia pro vitam</p>
+    <h3>1° Año · Jornadas Interactivas 2026</h3>
+
+    <p>
+        Tecnología · Innovación · Creatividad
+    </p>
+
+    <p>
+        Instituto Tecnológico Isaac Newton
+    </p>
 
 </footer>
-
 <script>
 
 document.querySelectorAll(".accordion-btn").forEach(btn => {
@@ -144,5 +274,6 @@ document.querySelectorAll(".accordion-btn").forEach(btn => {
 
 </script>
 
+</body>
 </body>
 </html>

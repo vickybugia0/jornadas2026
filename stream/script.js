@@ -93,15 +93,13 @@ function changeYear(year){
 // =========================
 // ACORDEONES DE MATERIAS
 // =========================
-
-const accordions = document.querySelectorAll(".accordion-header");
+const accordions = document.querySelectorAll(".accordion-btn");
 
 accordions.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        const content =
-            button.nextElementSibling;
+        const content = button.nextElementSibling;
 
         if(content.style.maxHeight){
 
@@ -110,7 +108,7 @@ accordions.forEach(button => {
         } else {
 
             content.style.maxHeight =
-                content.scrollHeight + "px";
+            content.scrollHeight + "px";
 
         }
 
