@@ -181,7 +181,7 @@
             <h3>Consumo</h3>
         </div>
 
-        <div class="jornada-card.2">
+        <div class="jornada-card">
             <h3>Sociedad</h3>
         </div>
 
