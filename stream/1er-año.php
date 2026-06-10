@@ -49,30 +49,10 @@
 
     </div>
 
-    <img src="img/1ero.jpg" alt="1° Año">
+    <img src="img/logo-jis.png" alt="1° Año">
 
 </section>
 
-<!-- INFORMACIÓN RÁPIDA -->
-
-<section class="info-cards">
-
-    <div class="info-card">
-        <h3>Proyecto Principal</h3>
-        <p>Generador Eólico Inteligente</p>
-    </div>
-
-    <div class="info-card">
-        <h3>Participantes</h3>
-        <p>35 estudiantes</p>
-    </div>
-
-    <div class="info-card">
-        <h3>Categoría</h3>
-        <p>Tecnología y Ciencias</p>
-    </div>
-
-</section>
 
 <!-- PROYECTO DESTACADO -->
 

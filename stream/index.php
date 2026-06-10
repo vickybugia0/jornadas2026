@@ -77,7 +77,7 @@
 
     <div class="hero-image">
 
-        <img src="img/logo2.png" alt="Logo">
+        <img src="img/logo-jis.png" alt="Logo">
 
     </div>
 
@@ -170,19 +170,19 @@
     <div class="jornadas-grid">
 
         <div class="jornada-card">
-            <h3>Naturaleza</h3>
+            <h1>Naturaleza</h1>
         </div>
 
         <div class="jornada-card">
-            <h3>Tecnología</h3>
+            <h1>Tecnología</h1>
         </div>
 
         <div class="jornada-card">
-            <h3>Consumo</h3>
+            <h1>Consumo</h1>
         </div>
 
         <div class="jornada-card">
-            <h3>Sociedad</h3>
+            <h1>Sociedad</h1>
         </div>
 
 </section>
@@ -276,6 +276,11 @@
     <li>
     <a href="https://wa.me/5493513722778" title="WhatsApp">
         <i class="fab fa-whatsapp"></i>
+    </a>
+</li>
+ <li>
+    <a href="https://www.youtube.com/live/ib9WQ0vFZ3c?si=xLJ6Brol4cWvZALy" title="Youtube">
+        <i class="fab fa-youtube"></i>
     </a>
 </li>
 </ul>
