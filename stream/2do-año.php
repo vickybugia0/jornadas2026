@@ -135,22 +135,51 @@
     </div>
 
 </section>
+<section class="projects-cards">
 
-<section class="course-section">
+    <div class="project-card">
 
-    <h2>Proyectos</h2>
-
-    <div class="accordion">
-
-        <button class="accordion-btn">The Green Influencer</button>
-        <div class="accordion-content">
-            <p>Participación en proyectos de cálculo, estadística y análisis de datos.</p>
+        <div class="project-image smart">
+            <img src="img/smart-house.jpg" alt="">
         </div>
 
-        <button class="accordion-btn">Efecto Newton: Atrayendo la tecnología del cajón a la vida útil</button>
-        <div class="accordion-content">
-            <p>Producción de textos, guiones y presentaciones institucionales.</p>
+        <div class="project-info">
+
+            <h3>The Green Influencer</h3>
+
+            <p>
+                Eco-influencers entre algoritmos y consumo sustentable.
+            </p>
+
+            <a href="green.php">
+                Ver Proyecto
+            </a>
+
         </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-image intech">
+            <img src="img/intech.jpg" alt="">
+        </div>
+
+        <div class="project-info">
+
+            <h3>Efecto Newton</h3>
+
+            <p>
+                Atrayendo la tecnología del cajón a la vida útil.
+            </p>
+
+            <a href="newton.php">
+                Ver Proyecto
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 

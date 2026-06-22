@@ -136,35 +136,48 @@
 
 
 </section>
+<section class="projects-cards">
 
-<section class="course-section">
+    <div class="project-card">
 
-    <h2>Proyectos</h2>
-
-    <div class="accordion">
-
-        <button class="accordion-btn">The smart house of the future</button>
-        <div class="accordion-content">
-            <p>Welcome to TechCorp” - Un cortometraje sobre el mundo laboral en la era moderna.</p>
+        <div class="project-image smart">
+            <img src="img/smart-house.jpg" alt="">
         </div>
 
-        <button class="accordion-btn">Yo,humano "Antes de que sea tarde!"</button>
-        <div class="accordion-content">
-            <p>Outdated:When Technology becomes Waste</p>
+        <div class="project-info">
+
+            <h3>Objetivos de Desarrollo Sostenible</h3>
+
+            <p>
+                Ciencia y conciencia para preservar nuestro recurso más vital.
+            </p>
+
+            <a href="ods.php">
+                Ver Proyecto
+            </a>
+
         </div>
 
-        <button class="accordion-btn">Ecos del Tiempo: Dos Generaciones, Una Misma Sociedad</button>
-        <div class="accordion-content">
-            <p>Investigaciones y proyectos para Jornadas Interactivas.</p>
-        </div>
-</button>
-        <div class="accordion-content">
-            <p>Producción de textos, guiones y presentaciones institucionales.</p>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-image intech">
+            <img src="img/intech.jpg" alt="">
         </div>
 
-        <button class="accordion-btn">Córdoba en transformación:¿Qué historia queremos contar?</button>
-        <div class="accordion-content">
-            <p>Investigaciones y proyectos para Jornadas Interactivas.</p>
+        <div class="project-info">
+
+            <h3>Yo, humano</h3>
+
+            <p>
+                El impacto del desarrollo tecnológico bajo la mirada humana.
+            </p>
+
+            <a href="humano.php">
+                Ver Proyecto
+            </a>
+
         </div>
 
     </div>

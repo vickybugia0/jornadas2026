@@ -54,30 +54,6 @@
 </section>
 
 
-<!-- PROYECTO DESTACADO -->
-
-<section class="featured-project">
-
-    <div class="project-image">
-        <img src="img/proyecto.jpg">
-    </div>
-
-    <div class="project-content">
-
-        <span>PROYECTO DESTACADO</span>
-
-        <h2>Generador Eólico Inteligente</h2>
-
-        <p>
-            Proyecto interdisciplinario presentado durante las
-            Jornadas Interactivas que combina tecnología,
-            energías renovables y comunicación audiovisual.
-        </p>
-
-    </div>
-
-</section>
-
 <!-- STREAM -->
 
 <section class="course-section">
@@ -115,68 +91,75 @@
     </div>
 
 </section>
+<section class="projects-cards">
 
-<section class="course-section">
+    <div class="project-card">
 
-    <h2>Proyectos</h2>
-
-    <div class="accordion">
-
-        <button class="accordion-btn">The smart house of the future</button>
-        <div class="accordion-content">
-            <p>¿En qué consiste? Es un video corto donde 6 grupos de estudiantes hacen un recorrido guiado en vivo por una maqueta o presentación de una casa inteligente. El objetivo es mostrar cómo la tecnología ayuda en las tareas del hogar, mejora el cuidado del ambiente y fomenta el consumo responsable.
-        <ul>
-            <li>Materias integradas:</li>
-            <li>Física: Los alumnos usarán simuladores digitales para entender cómo se conserva y se transforma la energía en la vida real, y cómo se "desperdicia" (degradación energética) en un hogar común. Luego, compararán sus resultados en clase.</li>
-           
-
-            <li>Matemática: Usarán cálculos de proporcionalidad para medir el ahorro energético de tecnologías como luces LED, paneles solares y electrodomésticos eficientes.</li>
-           
-
-            <li>Reflexión: Opiniones críticas sobre el impacto de la tecnología en la sociedad actual.</li> 
-        </ul>
-        </p>
+        <div class="project-image smart">
+            <img src="img/smart-house.jpg" alt="">
         </div>
 
-        <button class="accordion-btn">INTECH:Ciudadanía entre algoritmos, ecosistemas y consumos</button>
-        <div class="accordion-content">
-            <p>Propósito: Estudiantes de años superiores se integran con 1.er año mediante proyectos prácticos inspirados en las películas Wall-E y El Lorax, enfocados en la sustentabilidad, la tecnología y la acción escolar.
-<ul>
+        <div class="project-info">
 
+            <h3>Smart House</h3>
 
-Estructura de Equipos y Entregables
-WALL-E Team: Infografía digital proyectada y demostración interactiva sobre la huella digital.
+            <p>
+                Tecnología y eficiencia energética.
+            </p>
 
-<li>Lorax Team: Video documental o podcast escolar basado en el diagnóstico ambiental del ITIN.</li>
+            <a href="smart-house.php">
+                Ver Proyecto
+            </a>
 
-<li>Equipo Filósofo-s: Manifiesto filosófico digital y coordinación de un conversatorio reflexivo.</li>
-
-<li>Equipo Futuro Verde: Plan de Acción Escolar con propuestas sustentables y un mural digital colaborativo.</li>
-
-<li>Taller Práctico Co-gestionado:</li>
-
-<li>Actividad: Construcción de mini-robots junto a los alumnos de 1.er año.</li>
-
-<li>Materiales (Reciclaje tecnológico): Memorias USB en desuso y motores de ventiladores de escritorio.</li>
-</ul></p>
         </div>
 
-        <button class="accordion-btn">Córdoba en transformación:¿Qué historia queremos contar?</button>
-        <div class="accordion-content">
-            <p>El proyecto inicia en el espacio de Lengua con la lectura y análisis crítico del texto “Y si no fuera un cuento”. Esta narrativa sirve como puente transdisciplinar para conectar con los contenidos de Geografía.
+    </div>
 
-<li>Núcleos de Aprendizaje:</li>
-<li>Comprensión Lectora y Análisis Crítico (Lengua): Trabajo sobre el texto literario para identificar problemáticas socioambientales, visiones de mundo y el rol de las acciones humanas en el relato.</li>
+    <div class="project-card">
 
-<li>El Espacio Geográfico como Construcción Social (Geografía): Análisis de cómo las sociedades se apropian de la naturaleza, la explotan y la transforman a lo largo del tiempo.
-Se conceptualiza el espacio no como algo estático, sino como el resultado de esa constante interacción entre la sociedad y su entorno natural a través de la tecnología y el trabajo.</li>
-</ul></p>
+        <div class="project-image intech">
+            <img src="img/intech.jpg" alt="">
+        </div>
+
+        <div class="project-info">
+
+            <h3>INTECH</h3>
+
+            <p>
+                Ciudadanía entre algoritmos y ecosistemas.
+            </p>
+
+            <a href="intech.php">
+                Ver Proyecto
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-image cordoba">
+            <img src="img/cordoba.jpg" alt="">
+        </div>
+
+        <div class="project-info">
+
+            <h3>Córdoba en Transformación</h3>
+
+            <p>
+                Historia, geografía y sociedad.
+            </p>
+
+            <a href="cordoba.php">
+                Ver Proyecto
+            </a>
+
         </div>
 
     </div>
 
 </section>
-
 <!-- CRONOGRAMA -->
 
 <section class="timeline">

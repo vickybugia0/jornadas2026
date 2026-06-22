@@ -15,7 +15,23 @@
 </head>
 
 <body>
+<div id="preloader">
 
+    <div class="loader-content">
+
+        <img src="img/logo2.png" alt="Logo">
+
+        <h2>Instituto Tecnológico Isaac Newton</h2>
+
+        <p>Sapientia Pro Vitam</p>
+
+        <div class="loader-bar">
+            <span></span>
+        </div>
+
+    </div>
+
+</div>
 <!-- NAVBAR -->
 
 <header>
@@ -48,7 +64,7 @@
 </header>
 
 <!-- HERO -->
-
+<section class="course-hero" data-aos="fade-up"></section>
 <section id="inicio" class="hero">
 
     <div class="hero-text">
@@ -150,7 +166,7 @@
         </a>
 
     </div>
-
+<div class="project-card" data-aos="zoom-in"></div>
 </section>
 
 <!-- JORNADAS -->
@@ -278,12 +294,32 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 </li>
- <li>
-    <a href="https://www.youtube.com/live/ib9WQ0vFZ3c?si=xLJ6Brol4cWvZALy" title="Youtube">
+<li>
+    <a href="https://www.youtube.com/"
+       class="youtube"
+       target="_blank">
+
         <i class="fab fa-youtube"></i>
+
     </a>
 </li>
 </ul>
+<section class="map-section">
+
+    <h2>¿Dónde encontrarnos?</h2>
+
+    <div class="map-container">
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.5932102606675!2d-64.29752362585208!3d-31.342605624295818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dd2342be5eb%3A0x38f4951018dd3dd1!2sInstituto%20Tecnol%C3%B3gico%20Isaac%20Newton%2C%20Molino%20de%20Torres%206635%2C%20X5021BDE%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1781104728898!5m2!1ses-419!2sar"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+</section>
 </section>
 
 <!-- FOOTER -->

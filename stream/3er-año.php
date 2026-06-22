@@ -136,26 +136,48 @@
 
 
 </section>
+<section class="projects-cards">
 
-<section class="course-section">
+    <div class="project-card">
 
-    <h2>Proyectos</h2>
-
-    <div class="accordion">
-
-        <button class="accordion-btn">The smart house of the future</button>
-        <div class="accordion-content">
-            <p>Participación en proyectos de cálculo, estadística y análisis de datos.</p>
+        <div class="project-image smart">
+            <img src="img/smart-house.jpg" alt="">
         </div>
 
-        <button class="accordion-btn">INTECH:Ciudadanía entre algoritmos, ecosistemas y consumos</button>
-        <div class="accordion-content">
-            <p>Producción de textos, guiones y presentaciones institucionales.</p>
+        <div class="project-info">
+
+            <h3>Objetivos de Desarrollo Sostenible</h3>
+
+            <p>
+                Ciencia y conciencia para preservar nuestro recurso más vital.
+            </p>
+
+            <a href="ods.php">
+                Ver Proyecto
+            </a>
+
         </div>
 
-        <button class="accordion-btn">Córdoba en transformación:¿Qué historia queremos contar?</button>
-        <div class="accordion-content">
-            <p>Investigaciones y proyectos para Jornadas Interactivas.</p>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-image intech">
+            <img src="img/intech.jpg" alt="">
+        </div>
+
+        <div class="project-info">
+
+            <h3>Yo, humano</h3>
+
+            <p>
+                El impacto del desarrollo tecnológico bajo la mirada humana.
+            </p>
+
+            <a href="humano.php">
+                Ver Proyecto
+            </a>
+
         </div>
 
     </div>
